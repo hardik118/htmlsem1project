@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .democlass{
+            color: red;
+            }
+    </style>
+<h1>the document</h1>
+<h2>the creatattribute() and setattributenode() method</h2>
+<p>click "add" to creat a class attribute and add it to first h1 element.</p>
+<button onclick="myFunction()">add</button>
+<script>
+    function myFunction(){
+        const att= document.createAttribute("class");
+        att.value="democlass";
+        document.getElementsByTagName("h1")
+        [0].setAttributeNode(att);
+    }
+</script>
+</body>
+</html>
